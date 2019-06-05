@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Reportly</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_latest">Latest</string>
+    <string name="title_hot">Hot</string>
+    <string name="title_tracker">Complaint Tracker</string>
+    <string name="title_friends">Authorities</string>
+
+
+    <string name="facebook_app_id">373103943306238</string>
+    <string name="fb_login_protocol_scheme">fb373103943306238</string>
+    <string name="title_activity_form">FormActivity</string>
+    <string name="title_activity_actions">ActionsActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string-array name="agencies">
+        <item>Select an item</item>
+        <item>Ministry of Agriculture</item>
+        <item>Ministry of Chemicals and Fertilizers (Including Pharmaceuticals)</item>
+        <item>Ministry of Civil Aviation</item>
+        <item>Ministry of Coal</item>
+        <item>Ministry of Commerce and Industry/ Ministry of Business</item>
+        <item>Ministry of Communications and Information Technology</item>
+        <item>Ministry of Consumer Affairs, Food and Public Distribution</item>
+        <item>Ministry of Corporate Affairs</item>
+        <item>Ministry of Culture</item>
+        <item>Ministry of Defence</item>
+        <item>Ministry of Earth Sciences</item>
+        <item>Ministry of Environment and Forests</item>
+        <item>Ministry of External Affairs</item>
+        <item>Ministry of Finance</item>
+        <item>Ministry of Food Processing Industries</item>
+        <item>Ministry of Health and Family Welfare</item>
+        <item>Ministry of Heavy Industries and Public Enterprises</item>
+        <item>Ministry of Home Affairs</item>
+        <item>Ministry of Housing and Urban Poverty Alleviation</item>
+        <item>Ministry of Human Resource Development</item>
+        <item>Ministry of Information and Broadcasting</item>
+        <item>Ministry of Labour and Employment</item>
+        <item>Ministry of Law and Justice</item>
+        <item>Ministry of Micro, Small and Medium Enterprises</item>
+        <item>Ministry of Mines</item>
+        <item>Ministry of Minority Affairs</item>
+        <item>Ministry of New and Renewable Energy</item>
+        <item>Ministry of Panchayati Raj</item>
+        <item>Ministry of Personnel, Public Grievances and Pensions</item>
+        <item>Ministry of Petroleum and Natural Gas</item>
+        <item>Ministry of Power</item>
+        <item>Ministry of Railways</item>
+        <item>Ministry of Road Transport and Highways</item>
+        <item>Ministry of Rural Development</item>
+        <item>Ministry of Science and Technology</item>
+        <item>Ministry of Social Justice and Empowerment</item>
+        <item>Ministry of Statistics and Programme Implementation</item>
+        <item>Ministry of Skill Development and Entrepreneurship</item>
+        <item>Ministry of Steel</item>
+        <item>Ministry of Textiles</item>
+        <item>Ministry of Women and Child Development</item>
+        <item>Ministry of Youth Affairs and Sports</item>
+        <item>Autonomous Bodies</item>
+        <item>Independent Departments</item>
+        <item>Independent Agencies/Bodies</item>
+        <item>Intelligence</item>
+        <item>Law enforcement</item>
+        <item>Tribunals in India</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="mode">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+</resources>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.gretel.anticorruption">
+    package="com.gretel.zingo">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE"/>
@@ -16,7 +16,7 @@
         <!-- android:theme="@android:style/Theme.NoTitleBar.Fullscreen" -->
         <!-- android:theme="@style/AppTheme"> -->
         <activity
-            android:name="com.gretel.anticorruption.view.activities.MainActivity.AuthorityPrimaryActivity"
+            android:name="com.gretel.zingo.view.activities.MainActivity.AuthorityPrimaryActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar"
             >
@@ -27,7 +27,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.gretel.anticorruption.view.activities.ReportActivity.ReportActivity"
+            android:name="com.gretel.zingo.view.activities.ReportActivity.ReportActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme"
             >
@@ -37,7 +37,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.gretel.anticorruption.view.activities.MainActivity.UserPrimaryActivity"
+            android:name="com.gretel.zingo.view.activities.MainActivity.UserPrimaryActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar"
             >
@@ -48,7 +48,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.gretel.anticorruption.view.activities.MainActivity.AuthoritySecondaryActivity"
+            android:name="com.gretel.zingo.view.activities.MainActivity.AuthoritySecondaryActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar"
             >
@@ -59,7 +59,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.gretel.anticorruption.view.activities.MainActivity.UserSecondaryActivity"
+            android:name="com.gretel.zingo.view.activities.MainActivity.UserSecondaryActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar"
             >
@@ -70,7 +70,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.gretel.anticorruption.view.activities.LoginActivity.LoginActivity"
+            android:name="com.gretel.zingo.view.activities.LoginActivity.LoginActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -100,22 +100,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.gretel.anticorruption.view.activities.FormActivity.AuthorityFormActivity"
+            android:name="com.gretel.zingo.view.activities.FormActivity.AuthorityFormActivity"
             android:label="@string/title_activity_form"
-            android:parentActivityName="com.gretel.anticorruption.view.activities.LoginActivity.LoginActivity"
+            android:parentActivityName="com.gretel.zingo.view.activities.LoginActivity.LoginActivity"
             android:windowSoftInputMode="adjustResize">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.gretel.anticorruption.view.activities.LoginActivity.LoginActivity" />
+                android:value="com.gretel.zingo.view.activities.LoginActivity.LoginActivity" />
         </activity>
         <activity
-            android:name="com.gretel.anticorruption.view.activities.FormActivity.UserFormActivity"
+            android:name="com.gretel.zingo.view.activities.FormActivity.UserFormActivity"
             android:label="@string/title_activity_form"
-            android:parentActivityName="com.gretel.anticorruption.view.activities.LoginActivity.LoginActivity"
+            android:parentActivityName="com.gretel.zingo.view.activities.LoginActivity.LoginActivity"
             android:windowSoftInputMode="adjustResize">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.gretel.anticorruption.view.activities.LoginActivity.LoginActivity" />
+                android:value="com.gretel.zingo.view.activities.LoginActivity.LoginActivity" />
         </activity>
     </application>
 

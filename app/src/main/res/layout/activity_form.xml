@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    tools:context="com.gretel.anticorruption.view.activities.FormActivity.UserFormActivity">
+    tools:context="com.gretel.zingo.view.activities.FormActivity.UserFormActivity">
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/form_container"

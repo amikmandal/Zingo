@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorLogin"
-    tools:context="com.gretel.anticorruption.view.activities.LoginActivity.LoginActivity">
+    tools:context="com.gretel.zingo.view.activities.LoginActivity.LoginActivity">
 
     <ImageView
         android:id="@+id/scrapknot_profile_photo"

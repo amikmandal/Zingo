@@ -29,7 +29,7 @@ public class AuthorityPrimaryActivity extends PrimaryActivity {
 
     @Override
     protected void initializeFragment() {
-        getSupportFragmentManager().beginTransaction().replace(R.id.primary_fragment_container,new DashboardFragment()).addToBackStack(DASHBOARD.toString()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new DashboardFragment()).addToBackStack(DASHBOARD.toString()).commit();
         myPrevFragment = new DashboardFragment();
         myPrevFragmentID = myFragmentIDs.get(DASHBOARD);
         myCurrentFragmentID = myPrevFragmentID;
@@ -44,11 +44,11 @@ public class AuthorityPrimaryActivity extends PrimaryActivity {
                 break;
             case R.id.navigation_dashboard:
                 openNavFragment(new DashboardFragment(), myFragmentIDs.get(DASHBOARD));
-                createFragment(R.id.primary_fragment_container,myFragmentIDs.get(DASHBOARD),new DashboardFragment(),DASHBOARD.toString());
+                createFragment(R.id.fragment_container,myFragmentIDs.get(DASHBOARD),new DashboardFragment(),DASHBOARD.toString());
                 break;
             case R.id.navigation_request_list:
                 openNavFragment(new MyAuthorityFragment(), myFragmentIDs.get(REQUEST_LIST));
-                createFragment(R.id.primary_fragment_container,myFragmentIDs.get(REQUEST_LIST),new MyAuthorityFragment(),REQUEST_LIST.toString());
+                createFragment(R.id.fragment_container,myFragmentIDs.get(REQUEST_LIST),new MyAuthorityFragment(),REQUEST_LIST.toString());
                 break;
             case R.id.nav_review:
                 break;

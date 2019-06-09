@@ -20,7 +20,7 @@ abstract public class PrimaryActivity extends MainActivity implements BottomNavi
         System.out.println("order check ---> PrimaryActivity-onCreate");
         createFragmentTypeMap();
         setLayout();
-        BottomNavigationView bottomNavigationView = findViewById(R.id.navigation);
+        BottomNavigationView bottomNavigationView = findViewById(R.id.main_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
         addUIElements();
     }

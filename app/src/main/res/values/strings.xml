@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Reportly</string>
 
+    <string name="sign_up">Sign Up Now</string>
+
     <string name="title_home">Home</string>
     <string name="title_latest">Latest</string>
     <string name="title_hot">Hot</string>

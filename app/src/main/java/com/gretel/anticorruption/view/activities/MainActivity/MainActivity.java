@@ -108,7 +108,7 @@ public abstract class MainActivity extends AppCompatActivity implements Navigati
         //toolbar frontend
         Toolbar toolbar = findViewById(R.id.main_toolbar);
         setSupportActionBar(toolbar);
-        myToolbarButton = findViewById(R.id.menu_button);
+        myToolbarButton = findViewById(R.id.toolbar_search);
 
         //drawer frontend
         myDrawer = findViewById(R.id.main_container_drawer);

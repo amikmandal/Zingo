@@ -40,7 +40,7 @@ public class UserPrimaryActivity extends PrimaryActivity  {
 
     @Override
     protected void setLayout() {
-        setContentView(R.layout.activity_primary_user);
+        setContentView(R.layout.activity_main);
         FloatingActionButton newReport = findViewById(R.id.main_button);
         newReport.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,7 +54,7 @@ public class UserPrimaryActivity extends PrimaryActivity  {
     @Override
     protected void initializeFragment() {
         System.out.println("order check ---> UserPrimaryActivity-initializeFragment");
-        getSupportFragmentManager().beginTransaction().replace(R.id.primary_fragment_container,new HomeFragment()).addToBackStack(HOME.toString()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new HomeFragment()).addToBackStack(HOME.toString()).commit();
         myPrevFragment = new HomeFragment();
         myPrevFragmentID = myFragmentIDs.get(HOME);
         myCurrentFragmentID = myPrevFragmentID;
@@ -75,19 +75,19 @@ public class UserPrimaryActivity extends PrimaryActivity  {
                 break;
             case R.id.navigation_home:
                 openNavFragment(new HomeFragment(), myFragmentIDs.get(HOME));
-                createFragment(R.id.primary_fragment_container,myFragmentIDs.get(HOME),new HomeFragment(),HOME.toString());
+                createFragment(R.id.fragment_container,myFragmentIDs.get(HOME),new HomeFragment(),HOME.toString());
                 break;
             case R.id.navigation_latest:
                 openNavFragment(new LatestFragment(), myFragmentIDs.get(LATEST));
-                createFragment(R.id.primary_fragment_container,myFragmentIDs.get(LATEST),new LatestFragment(),LATEST.toString());
+                createFragment(R.id.fragment_container,myFragmentIDs.get(LATEST),new LatestFragment(),LATEST.toString());
                 break;
             case R.id.navigation_hot:
                 openNavFragment(new HotFragment(), myFragmentIDs.get(HOT));
-                createFragment(R.id.primary_fragment_container,myFragmentIDs.get(HOT),new HotFragment(),HOT.toString());
+                createFragment(R.id.fragment_container,myFragmentIDs.get(HOT),new HotFragment(),HOT.toString());
                 break;
             case R.id.navigation_authorities:
                 openNavFragment(new ByAuthorityFragment(), myFragmentIDs.get(AUTHORITIES));
-                createFragment(R.id.primary_fragment_container,myFragmentIDs.get(AUTHORITIES),new ByAuthorityFragment(),AUTHORITIES.toString());
+                createFragment(R.id.fragment_container,myFragmentIDs.get(AUTHORITIES),new ByAuthorityFragment(),AUTHORITIES.toString());
                 break;
             case R.id.nav_review:
                 break;

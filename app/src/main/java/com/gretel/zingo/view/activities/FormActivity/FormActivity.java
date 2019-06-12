@@ -13,8 +13,6 @@ import com.gretel.zingo.model.Agent.User;
 import com.gretel.zingo.model.FormData.FormData;
 import com.gretel.zingo.model.FormData.AuthorityForm;
 import com.gretel.zingo.model.FormData.UserForm;
-import com.gretel.zingo.view.activities.MainActivity.AuthorityPrimaryActivity;
-import com.gretel.zingo.view.activities.MainActivity.UserPrimaryActivity;
 import com.gretel.zingo.util.LocalStorage;
 import com.gretel.zingo.R;
 
@@ -82,13 +80,13 @@ abstract public class FormActivity extends AppCompatActivity {
             if(myFormType == USER_FORM){
                 localStorage.saveUser((User) a);
 
-                Intent intent = new Intent(getApplicationContext(),UserPrimaryActivity.class);
-                startActivity(intent);
+//                Intent intent = new Intent(getApplicationContext(),UserPrimaryActivity.class);
+//                startActivity(intent);
             } else {
                 localStorage.saveAuthority((Authority) a);
 
-                Intent intent = new Intent(getApplicationContext(),AuthorityPrimaryActivity.class);
-                startActivity(intent);
+//                Intent intent = new Intent(getApplicationContext(),AuthorityPrimaryActivity.class);
+//                startActivity(intent);
             }
 
         }

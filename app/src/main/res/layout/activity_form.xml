@@ -12,7 +12,7 @@
         android:layout_height="fill_parent">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/scrapknot_profile_photo"
+            android:id="@+id/zingo_profile_photo"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginStart="8dp"
@@ -41,7 +41,7 @@
             android:typeface="monospace"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/scrapknot_profile_photo" />
+            app:layout_constraintTop_toBottomOf="@+id/zingo_profile_photo" />
 
         <TextView
             android:id="@+id/info_text_view"

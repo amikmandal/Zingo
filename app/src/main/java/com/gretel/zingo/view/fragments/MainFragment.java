@@ -24,10 +24,10 @@ public abstract class MainFragment extends Fragment {
 
         View view =  inflater.inflate(getLayout(),container,false);
 
-        myReportNumber = view.findViewById(R.id.reports_number);
-        Button mainButton = view.findViewById(R.id.main_button);
+//        myReportNumber = view.findViewById(R.id.reports_number);
+//        Button mainButton = view.findViewById(R.id.main_button);
 
-        mainButton.setOnClickListener(getButtonListener());
+       // mainButton.setOnClickListener(getButtonListener());
 
         return view;
     }

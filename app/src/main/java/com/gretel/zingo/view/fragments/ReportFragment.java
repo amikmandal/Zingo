@@ -76,7 +76,7 @@ public abstract class ReportFragment extends Fragment {
     protected void initRecyclerView(View v)
     {
         //call RecyclerView
-        myRecyclerView = v.findViewById(R.id.report_recycler_view);
+        myRecyclerView = v.findViewById(R.id.recycler_view_chat);
         ReportAdapter adapter = new ReportAdapter(myReports,getActivity().getApplicationContext());
         myRecyclerView.setAdapter(adapter);
 

@@ -11,7 +11,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.gretel.zingo.R;
-import com.gretel.zingo.view.activities.ReportActivity.ReportActivity;
+import com.gretel.zingo.view.activities.MainActivity.MainActivity;
 
 public class HomeFragment extends MainFragment {
 
@@ -28,7 +28,7 @@ public class HomeFragment extends MainFragment {
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity().getApplicationContext(), ReportActivity.class);
+                Intent intent = new Intent(getActivity().getApplicationContext(), MainActivity.class);
                 startActivity(intent);
             }
         };

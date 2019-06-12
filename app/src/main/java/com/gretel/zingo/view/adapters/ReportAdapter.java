@@ -32,7 +32,7 @@ public class ReportAdapter extends RecyclerView.Adapter<ReportAdapter.ViewHolder
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         LayoutInflater mInflater = (LayoutInflater) myContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View row = mInflater.inflate(R.layout.holder_report,viewGroup,false);
+        View row = mInflater.inflate(R.layout.holder_chat,viewGroup,false);
         myFirebaseManager = new FirebaseManager("reports",myContext);
         return new ReportAdapter.ViewHolder(row);
     }
@@ -86,16 +86,16 @@ public class ReportAdapter extends RecyclerView.Adapter<ReportAdapter.ViewHolder
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            myOfficerText=itemView.findViewById(R.id.text_officer);
-            myAuthorityText=itemView.findViewById(R.id.text_authority);
-            myPlaceText=itemView.findViewById(R.id.text_place);
-            myReportText=itemView.findViewById(R.id.text_report);
-            myDateText=itemView.findViewById(R.id.text_date);
-            myAuthorText=itemView.findViewById(R.id.text_author);
-            myUpText=itemView.findViewById(R.id.text_up);
-            myDownText=itemView.findViewById(R.id.text_down);
-            myUpButton=itemView.findViewById(R.id.button_up);
-            myDownButton=itemView.findViewById(R.id.button_down);
+//            myOfficerText=itemView.findViewById(R.id.text_officer);
+//            myAuthorityText=itemView.findViewById(R.id.text_authority);
+//            myPlaceText=itemView.findViewById(R.id.text_place);
+//            myReportText=itemView.findViewById(R.id.text_report);
+//            myDateText=itemView.findViewById(R.id.text_date);
+//            myAuthorText=itemView.findViewById(R.id.text_author);
+//            myUpText=itemView.findViewById(R.id.text_up);
+//            myDownText=itemView.findViewById(R.id.text_down);
+//            myUpButton=itemView.findViewById(R.id.button_up);
+//            myDownButton=itemView.findViewById(R.id.button_down);
         }
     }
 }

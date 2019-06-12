@@ -10,11 +10,11 @@ import android.view.ViewGroup;
 
 import com.gretel.zingo.R;
 
-public class AuthorityFragment extends Fragment {
+public class EventFragment extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_contact_us,container,false);
+        return inflater.inflate(R.layout.fragment_event,container,false);
     }
 }

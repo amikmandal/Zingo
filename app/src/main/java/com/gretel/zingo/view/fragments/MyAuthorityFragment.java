@@ -22,6 +22,6 @@ public class MyAuthorityFragment extends ReportFragment {
 
     @Override
     protected int getFragmentLayout() {
-        return R.layout.fragment_my_authority;
+        return R.layout.fragment_chat;
     }
 }

@@ -10,11 +10,11 @@ import android.view.ViewGroup;
 
 import com.gretel.zingo.R;
 
-public class InfoFragment extends Fragment {
+public class AboutUsFragment extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_info,container,false);
+        return inflater.inflate(R.layout.fragment_about_us,container,false);
     }
 }

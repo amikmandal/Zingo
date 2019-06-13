@@ -10,7 +10,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.google.gson.Gson;
 import com.gretel.zingo.model.Agent.Agent;
-import com.gretel.zingo.model.Report.Report;
 import com.gretel.zingo.model.Agent.User;
 
 /**
@@ -64,29 +63,6 @@ public class FirebaseManager {
     public void editUser(User user){
         databaseReference.child(user.getLoginType()).child(user.getID()).removeValue();
         addUser(user,user.getLoginType());
-    }
-
-    public void addReport(Report report){
-        databaseReference.child(report.getId()).setValue(report);
-    }
-
-    public void addReportToUser(User u, String reportID, Long timestamp) {
-        databaseReference.child(u.getLoginType()).child(u.getID()).child(reportID).setValue(timestamp);
-    }
-
-    public void update(Report report, boolean vote) {
-        String reportID =  report.getId();
-        databaseReference.child(reportID).removeValue();
-        if(vote)
-            report.upvote();
-        else
-            report.downvote();
-        addReport(report);
-    }
-
-    public String getReportKey(){
-        String reportID = databaseReference.push().getKey();
-        return reportID;
     }
 
 }

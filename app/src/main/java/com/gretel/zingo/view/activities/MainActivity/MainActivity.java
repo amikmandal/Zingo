@@ -10,10 +10,9 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
-import com.google.common.collect.HashBiMap;
 import com.gretel.zingo.R;
 import com.gretel.zingo.view.fragments.EventFragment;
-import com.gretel.zingo.view.fragments.InfoFragment;
+import com.gretel.zingo.view.fragments.AboutUsFragment;
 import com.gretel.zingo.view.fragments.MatchFragment;
 import com.gretel.zingo.view.fragments.ProfileFragment;
 
@@ -82,7 +81,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
         switch(item.getItemId()){
             case R.id.navigation_info:
-                openFragment(new InfoFragment(),myFragmentIDs.get(INFO));
+                openFragment(new AboutUsFragment(),myFragmentIDs.get(INFO));
                 break;
             case R.id.navigation_events:
                 openFragment(new EventFragment(),myFragmentIDs.get(EVENTS));

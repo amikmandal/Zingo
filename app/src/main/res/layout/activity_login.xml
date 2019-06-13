@@ -37,6 +37,24 @@
         app:layout_constraintTop_toBottomOf="@+id/zingo_profile_photo" />
 
     <Button
+        android:id="@+id/sign_in_button"
+        android:elevation="5dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/button_silver"
+        android:text="@string/sign_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zingo_profile_photo" />
+
+    <Button
         android:id="@+id/sign_up_button"
         android:elevation="5dp"
         android:layout_width="250dp"
@@ -45,13 +63,13 @@
         android:layout_centerVertical="true"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="@drawable/button_silver"
         android:text="@string/sign_up"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/zingo_profile_photo" />
+        app:layout_constraintTop_toBottomOf="@+id/sign_in_button" />
 
 </android.support.constraint.ConstraintLayout>

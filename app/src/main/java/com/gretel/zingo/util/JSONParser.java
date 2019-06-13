@@ -9,7 +9,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 /**
- * This class is responsible for parsing JSON objects.
+ * This class is responsible for parsing JSON objects. Required for Facebook objects. Ignore for now.
  * @author Amik Mandal
  */
 public class JSONParser {

@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.gretel.zingo.view.activities.LoginActivity.LoginActivity"
+            android:name="com.gretel.zingo.view.activities.LoginActivity.StartActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -54,20 +54,20 @@
         <activity
             android:name="com.gretel.zingo.view.activities.FormActivity.AuthorityFormActivity"
             android:label="@string/title_activity_form"
-            android:parentActivityName="com.gretel.zingo.view.activities.LoginActivity.LoginActivity"
+            android:parentActivityName="com.gretel.zingo.view.activities.LoginActivity.StartActivity"
             android:windowSoftInputMode="adjustResize">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.gretel.zingo.view.activities.LoginActivity.LoginActivity" />
+                android:value="com.gretel.zingo.view.activities.LoginActivity.StartActivity" />
         </activity>
         <activity
             android:name="com.gretel.zingo.view.activities.FormActivity.UserFormActivity"
             android:label="@string/title_activity_form"
-            android:parentActivityName="com.gretel.zingo.view.activities.LoginActivity.LoginActivity"
+            android:parentActivityName="com.gretel.zingo.view.activities.LoginActivity.StartActivity"
             android:windowSoftInputMode="adjustResize">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.gretel.zingo.view.activities.LoginActivity.LoginActivity" />
+                android:value="com.gretel.zingo.view.activities.LoginActivity.StartActivity" />
         </activity>
     </application>
 

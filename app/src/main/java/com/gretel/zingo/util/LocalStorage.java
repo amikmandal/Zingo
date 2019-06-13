@@ -5,7 +5,6 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
 import com.google.gson.Gson;
-import com.gretel.zingo.model.Agent.Authority;
 import com.gretel.zingo.model.Agent.User;
 
 import java.util.ArrayList;
@@ -54,10 +53,6 @@ public class LocalStorage {
      */
     public void saveUser(User u) {
 
-        Gson gson = new Gson();
-        String json = gson.toJson(u);
-        saveString("myUser", json);
-
     }
 
     /**
@@ -65,11 +60,7 @@ public class LocalStorage {
      * @return the user stored locally
      */
     public User loadUser(){
-
-        Gson gson = new Gson();
-        String json = loadUserJSON();
-        return gson.fromJson(json, User.class);
-
+        return null;
     }
 
     public String loadUserJSON() {
@@ -79,96 +70,21 @@ public class LocalStorage {
     /**
      * Method to delete saved data of User
      */
-    public void removeUser(){
-        myEditor.remove("myUser").apply();
+    public void removeUser(){;
     }
 
+    /**
+     * Method to edit saved data of User
+     */
     public void editUser(User user){
-        removeUser();
-        saveUser(user);
+
     }
 
+    /**
+     * Method to check if user is logged in or not
+     * @return true if logged in already, else false
+     */
     public boolean checkIfUserPresent(){
-        String checkJSON = loadUserJSON();
-        if (checkJSON.equals("")){
-            return false;
-        }
-        return true;
-    }
-
-    /**
-     * Method to store an authority locally
-     * @param r specifies the authority to be saved
-     */
-    public void saveAuthority(Authority r) {
-
-        Gson gson = new Gson();
-        String json = gson.toJson(r);
-        saveString("myAuthority", json);
-
-    }
-
-    /**
-     * Method to retrieve an user that is saved locally
-     * @return the authority stored locally
-     */
-    public Authority loadAuthority(){
-
-        Gson gson = new Gson();
-        String json = loadAuthorityJSON();
-        return gson.fromJson(json, Authority.class);
-
-    }
-
-    public String loadAuthorityJSON() {
-        return loadString("myAuthority");
-    }
-
-    /**
-     * Method to delete saved data of Authority
-     */
-    public void removeAuthority(){
-        myEditor.remove("myAuthority").apply();
-    }
-
-    public void editAuthority(Authority r){
-        removeUser();
-        saveAuthority(r);
-    }
-
-    public boolean checkIfAuthorityPresent(){
-        String checkJSON = loadAuthorityJSON();
-        if (checkJSON.equals("")){
-            return false;
-        }
-        return true;
-    }
-
-    public void addReportToUser(String reportID) {
-        String[] oldReports = loadReports();
-        ArrayList<String> newReports;
-        if(oldReports==null)
-            newReports = new ArrayList<>();
-        else
-            newReports = new ArrayList<String>(Arrays.asList(oldReports));
-        newReports.add(reportID);
-        saveReports(newReports.toArray(new String[0]));
-
-    }
-
-    private void saveReports(String[] reports) {
-        Gson gson = new Gson();
-        String json = gson.toJson(reports);
-        saveString("reports", json);
-    }
-
-    private String[] loadReports() {
-        Gson gson = new Gson();
-        String json = loadReportsJSON();
-        return gson.fromJson(json, String[].class);
-    }
-
-    private String loadReportsJSON() {
-        return loadString("reports");
+        return false;
     }
 }

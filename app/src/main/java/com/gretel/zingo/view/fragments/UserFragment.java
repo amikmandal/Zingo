@@ -20,7 +20,7 @@
 //import android.widget.Toast;
 //import android.widget.ViewSwitcher;
 //
-//import com.gretel.zingo.model.Agent.User;
+//import com.gretel.zingo.model.User.User;
 //import com.gretel.zingo.util.FirebaseManager;
 //import com.gretel.zingo.util.LocalStorage;
 //import com.gretel.zingo.R;

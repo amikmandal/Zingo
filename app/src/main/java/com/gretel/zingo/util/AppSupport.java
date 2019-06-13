@@ -8,6 +8,9 @@ import android.net.Uri;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 
+/**
+ * Required for calling. Ignore for now.
+ */
 public class AppSupport {
 
     public void callNumber(Activity activity){
